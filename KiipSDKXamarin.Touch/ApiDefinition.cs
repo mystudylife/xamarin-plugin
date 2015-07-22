@@ -16,19 +16,19 @@ namespace KiipSDKXamarin.Touch
 	//	[Static]
 	//	partial interface Kiip {
 	//				[Field ("KPErrorDomain") , "__Internal"]
-	//				NSString KPErrorDomain { get; }
+	//				String KPErrorDomain { get; }
 	//
 	//				[Field ("KPVersion") , "__Internal"]
-	//				NSString KPVersion { get; }
+	//				String KPVersion { get; }
 	//
 	//				[Field ("kKPCapabilities_Real") , "__Internal"]
-	//				NSString kKPCapabilities_Real { get; }
+	//				String kKPCapabilities_Real { get; }
 	//
 	//				[Field ("kKPCapabilities_Virtual") , "__Internal"]
-	//				NSString kKPCapabilities_Virtual { get; }
+	//				String kKPCapabilities_Virtual { get; }
 	//
 	//				[Field ("kKPCapabilities_Video") , "__Internal"]
-	//				NSString kKPCapabilities_Video { get; }
+	//				String kKPCapabilities_Video { get; }
 	//	}
 
 	[BaseType (typeof(NSObject))]
@@ -36,19 +36,19 @@ namespace KiipSDKXamarin.Touch
 	{
 
 		//		[Field ("KPErrorDomain") , "__Internal"]
-		//		NSString KPErrorDomain { get; }
+		//		String KPErrorDomain { get; }
 		//
 		//		[Field ("KPVersion") , "__Internal"]
-		//		NSString KPVersion { get; }
+		//		String KPVersion { get; }
 		//
 		//		[Field ("kKPCapabilities_Real") , "__Internal"]
-		//		NSString kKPCapabilities_Real { get; }
+		//		String kKPCapabilities_Real { get; }
 		//
 		//		[Field ("kKPCapabilities_Virtual") , "__Internal"]
-		//		NSString kKPCapabilities_Virtual { get; }
+		//		String kKPCapabilities_Virtual { get; }
 		//
 		//		[Field ("kKPCapabilities_Video") , "__Internal"]
-		//		NSString kKPCapabilities_Video { get; }
+		//		String kKPCapabilities_Video { get; }
 
 		/** @name Accessing Kiip Properties */
 
@@ -87,13 +87,13 @@ namespace KiipSDKXamarin.Touch
 		 The user's email address. Setting this will auto-populate units with their email address.
 		 */
 		[Export ("email")]
-		NSString Email { get; set; }
+		String Email { get; set; }
 
 		/**
 		 The user's gender. Setting this will help target rewards to your users more effectively.
 		 */
 		[Export ("gender")]
-		NSString Gender { get; set; }
+		String Gender { get; set; }
 
 		/**
 		 The user's birthday. Setting this will help target rewards to your users more effectively.
@@ -105,7 +105,7 @@ namespace KiipSDKXamarin.Touch
 		 The the string Kiip uses to uniquely identify devices.
 		 */
 		[Export ("deviceIdentifier")]
-		NSString DeviceIdentifier { get; }
+		String DeviceIdentifier { get; }
 
 
 		/** @name Setting and Getting the Delegate */
@@ -144,7 +144,7 @@ namespace KiipSDKXamarin.Touch
 		@param appSecret The Application's secret.
 		*/
 		[Export ("initWithAppKey:andSecret:")]
-		NSObject InitWithAppKey (NSString appKey, NSString appSecret);
+		NSObject InitWithAppKey (String appKey, String appSecret);
 
 
 
@@ -162,7 +162,7 @@ namespace KiipSDKXamarin.Touch
 
 
 			[Export ("saveMoment:withCompletionHandler:")]
-		void SaveMoment (NSString momentId, SaveMomentDelegate handler);
+		void SaveMoment (String momentId, SaveMomentDelegate handler);
 
 		/**
 		 Saves a moment.
@@ -175,7 +175,7 @@ namespace KiipSDKXamarin.Touch
 		 */
 
 		[Export ("saveMoment:value:withCompletionHandler:")]
-		void SaveMoment (NSString momentId, double value, SaveMomentDelegate handler);
+		void SaveMoment (String momentId, double value, SaveMomentDelegate handler);
 	}
 
 
@@ -214,7 +214,7 @@ namespace KiipSDKXamarin.Touch
 		@param signature The signature that can be checked to validate this transaction.
 		*/
 		[Export ("kiip:didReceiveContent:quantity:transactionId:signature:")]
-		void DidReceiveContent (Kiip kiip, NSString content, int quantity, NSString transactionId, NSString signature);
+		void DidReceiveContent (Kiip kiip, String content, int quantity, String transactionId, String signature);
 
 		/** @name Video Playback Callbacks */
 
@@ -251,14 +251,14 @@ namespace KiipSDKXamarin.Touch
 		The title of the loading dialog.
 		*/
 		[Export ("title")]
-		NSString Title { get; set; }
+		String Title { get; set; }
 
 
 /**
  The message of the loading dialog.
  */
 		[Export ("message")]
-		NSString Message { get; set; }
+		String Message { get; set; }
 
 
 
@@ -317,13 +317,13 @@ namespace KiipSDKXamarin.Touch
 		The title of the notification.
 		*/
 		[Export ("title")]
-		NSString Title { get; set; }
+		String Title { get; set; }
 
 		/**
  The message of the notification.
  */
 		[Export ("message")]
-		NSString Message { get; set; }
+		String Message { get; set; }
 
 
 		/**
@@ -419,7 +419,7 @@ namespace KiipSDKXamarin.Touch
 		The unique identifier of the poptart.
 		*/
 		[Export ("viewId")]
-		NSString ViewId { get; set; }
+		String ViewId { get; set; }
 
 		/**
  		The notification of the poptart.
