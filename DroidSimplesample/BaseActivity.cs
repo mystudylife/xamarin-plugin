@@ -52,7 +52,15 @@ namespace simplesample
 
 		public virtual void OnFinished (Kiip kiip, Poptart poptart)
 		{
-			mKiipFragment.ShowPoptart(poptart);
+			OnPoptart(poptart);
+		}
+
+		public virtual void OnPoptart(Poptart poptart) {
+			if (mKiipFragment != null) {
+				if(poptart != null){
+					mKiipFragment.ShowPoptart (poptart);
+				}
+			}
 		}
 	}
 }

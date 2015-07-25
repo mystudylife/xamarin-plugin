@@ -64,6 +64,15 @@
     <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\kp_activity_indicator.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\kp_cancel_video.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\kp_play_video.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\kp_activity_indicator.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\kp_cancel_video.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\kp_play_video.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\kp_activity_indicator.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\kp_cancel_video.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\kp_play_video.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
