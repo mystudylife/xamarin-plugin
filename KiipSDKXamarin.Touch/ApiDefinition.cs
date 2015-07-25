@@ -12,43 +12,24 @@ namespace KiipSDKXamarin.Touch
 
 	delegate void SaveMomentDelegate (KPPoptart poptart, NSError error);
 
-
-	//	[Static]
-	//	partial interface Kiip {
-	//				[Field ("KPErrorDomain") , "__Internal"]
-	//				String KPErrorDomain { get; }
-	//
-	//				[Field ("KPVersion") , "__Internal"]
-	//				String KPVersion { get; }
-	//
-	//				[Field ("kKPCapabilities_Real") , "__Internal"]
-	//				String kKPCapabilities_Real { get; }
-	//
-	//				[Field ("kKPCapabilities_Virtual") , "__Internal"]
-	//				String kKPCapabilities_Virtual { get; }
-	//
-	//				[Field ("kKPCapabilities_Video") , "__Internal"]
-	//				String kKPCapabilities_Video { get; }
-	//	}
-
 	[BaseType (typeof(NSObject))]
 	interface Kiip
 	{
 
-		//		[Field ("KPErrorDomain") , "__Internal"]
-		//		String KPErrorDomain { get; }
-		//
-		//		[Field ("KPVersion") , "__Internal"]
-		//		String KPVersion { get; }
-		//
-		//		[Field ("kKPCapabilities_Real") , "__Internal"]
-		//		String kKPCapabilities_Real { get; }
-		//
-		//		[Field ("kKPCapabilities_Virtual") , "__Internal"]
-		//		String kKPCapabilities_Virtual { get; }
-		//
-		//		[Field ("kKPCapabilities_Video") , "__Internal"]
-		//		String kKPCapabilities_Video { get; }
+		[Field ("KPErrorDomain", "__Internal")]
+		NSString KPErrorDomain { get; }
+
+		[Field ("KPVersion", "__Internal")]
+		NSString KPVersion { get; }
+
+		[Field ("kKPCapabilities_Real", "__Internal")]
+		NSString kKPCapabilities_Real { get; }
+
+		[Field ("kKPCapabilities_Virtual", "__Internal")]
+		NSString kKPCapabilities_Virtual { get; }
+
+		[Field ("kKPCapabilities_Video", "__Internal")]
+		NSString kKPCapabilities_Video { get; }
 
 		/** @name Accessing Kiip Properties */
 
