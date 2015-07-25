@@ -5,12 +5,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KiipSDKXamarin.Droid", "Kii
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KiipSDKXamarin.Touch", "KiipSDKXamarin.Touch\KiipSDKXamarin.Touch.csproj", "{75D98C2F-4EBC-43DD-9291-1F217476119E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DroidSimplesample", "DroidSimplesample\DroidSimplesample.csproj", "{162CB548-4243-4788-9A4D-7678DA242521}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{162CB548-4243-4788-9A4D-7678DA242521}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{162CB548-4243-4788-9A4D-7678DA242521}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{162CB548-4243-4788-9A4D-7678DA242521}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{162CB548-4243-4788-9A4D-7678DA242521}.Release|Any CPU.Build.0 = Release|Any CPU
 		{75D98C2F-4EBC-43DD-9291-1F217476119E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{75D98C2F-4EBC-43DD-9291-1F217476119E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75D98C2F-4EBC-43DD-9291-1F217476119E}.Release|Any CPU.ActiveCfg = Release|Any CPU
