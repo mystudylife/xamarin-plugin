@@ -2,6 +2,7 @@
 using UIKit;
 
 using KiipSDKXamarin.Touch;
+using System;
 
 namespace TouchSimpleSample
 {
