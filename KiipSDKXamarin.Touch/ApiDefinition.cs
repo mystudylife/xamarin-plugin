@@ -83,6 +83,12 @@ namespace KiipSDKXamarin.Touch
 		NSDate Birthday { get; set; }
 
 		/**
+ 		The boolean value to receive test rewards in developement/debug mode. Default is NO.
+ 		*/
+		[Export ("testMode")]
+		bool TestMode { get; set; }
+
+		/**
 		 The the string Kiip uses to uniquely identify devices.
 		 */
 		[Export ("deviceIdentifier")]

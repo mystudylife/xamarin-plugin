@@ -18,8 +18,9 @@ namespace TouchSimpleSample
 			base.ViewDidLoad ();
 			// Perform any additional setup after loading the view, typically from a nib.
 
-
+			Kiip.SharedInstance ().TestMode = true;
 			String deviceIdentifier = Kiip.SharedInstance ().DeviceIdentifier;
+
 			DeviceID.Text = deviceIdentifier;
 
 			DismissKeyboardTapGesture.AddTarget (DismissKeyboard);

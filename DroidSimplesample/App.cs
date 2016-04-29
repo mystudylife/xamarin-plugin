@@ -24,6 +24,7 @@ namespace simplesample
 		{
 			base.OnCreate ();
 			Kiip kiip = Kiip.Init(this, APP_KEY, APP_SECRET);
+			kiip.TestMode = (Java.Lang.Boolean)true;
 			kiip.SetOnContentListener(this);
 			Kiip.Instance = kiip;
 		}
